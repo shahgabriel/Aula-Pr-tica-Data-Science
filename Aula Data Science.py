@@ -14,11 +14,7 @@ df.set_index('País', inplace=True)
 
 anos = list(map(str, range(1980, 2014)))
 
-anos
-
 brasil = df.loc['Brasil', anos]
-
-brasil
 
 brasil_dict = {'ano': brasil.index.tolist(), 'imigrantes': brasil.values.tolist()}
 dados_brasil = pd.DataFrame(brasil_dict)
