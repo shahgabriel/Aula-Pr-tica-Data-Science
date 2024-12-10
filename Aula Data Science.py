@@ -6,10 +6,6 @@ import plotly.express as px
 
 df = pd.read_csv ('/content/imigrantes_canada.csv')
 
-df
-
-df.info()
-
 df.set_index('País', inplace=True)
 
 anos = list(map(str, range(1980, 2014)))
