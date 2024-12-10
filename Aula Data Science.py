@@ -19,8 +19,6 @@ brasil = df.loc['Brasil', anos]
 brasil_dict = {'ano': brasil.index.tolist(), 'imigrantes': brasil.values.tolist()}
 dados_brasil = pd.DataFrame(brasil_dict)
 
-dados_brasil
-
 plt.plot(dados_brasil['ano'], dados_brasil['imigrantes'])
 
 plt.plot(dados_brasil['ano'], dados_brasil['imigrantes'])
